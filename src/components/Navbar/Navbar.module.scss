@@ -1,0 +1,45 @@
+.navBar {
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+
+
+    img {
+        margin: 0px 1vw;
+        width: 10%;
+        height: auto;
+    }
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 1vw;
+        margin: 0px 1vw;
+        button {
+            margin: 1vw 0px;
+            border: none;
+            white-space: nowrap;
+            width: 50%;
+            font-size: 0.8vw;
+            font-weight: bold;
+            background: rgb(235, 230, 230);
+            color: black;
+            border-radius: 0.5vw;
+            padding: 0.5vw;
+
+            &:hover {
+                transition: 0.5s;
+                cursor: pointer;
+            }
+        }
+
+        .activeTab {
+            color: white;
+            background: blue;
+        }
+    }
+}
